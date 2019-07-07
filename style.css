@@ -22,27 +22,36 @@
 .nav-ul {
     list-style: none; 
     display: flex; 
-    padding: 0; 
+    padding: 0;  
 }
 
 .blog {
     position: relative; 
     top: 70px; 
-    margin: 10px; 
-    margin-bottom: 13px;
+    margin: 0; 
     padding:0px;
+    padding-right: 10px; 
     font-size: 16px; 
-    color: #4a4a4a;
 }
 
 .contacto {
     position: relative; 
     top: 70px; 
-    margin: 10px;
-    padding:0px;
+    margin: 0; 
+    padding-left: 10px; 
     font-size: 16px; 
     margin-bottom: 13px;
     color: #4a4a4a; 
+}
+
+.blog-link {
+    text-decoration: none;
+    color: #4a4a4a;
+}
+
+.contact-link {
+    text-decoration: none;
+    color: #4a4a4a;
 }
 
 .logo {
@@ -82,7 +91,7 @@
 .text-h1 {
     margin:auto; 
     margin-top: 140px; 
-    /* font-weight: bold;  */
+    font-weight: bold; 
     font-size: 30px; 
 }
 

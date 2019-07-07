@@ -11,16 +11,20 @@
 .header-nav {
     background-color:white; 
     opacity: 0.90; 
-    font-family: 'Rubik', sans-serif;
-    font-size: 15px; 
-    color: rgb(112, 23, 23); 
+    font-family: 'Rubik', sans-serif; 
     line-height: 30px; 
     display: flex; 
     text-align: center; 
     justify-content: center; 
     height: 120px;
-
 }
+
+.nav-ul {
+    list-style: none; 
+    display: flex; 
+    padding: 0; 
+}
+
 .blog {
     position: relative; 
     top: 70px; 

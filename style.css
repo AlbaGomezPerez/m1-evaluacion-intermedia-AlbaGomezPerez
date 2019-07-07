@@ -11,7 +11,8 @@ body {
     top: 0; 
     left: 0; 
     text-align: center;
-    text-transform: uppercase;  
+    text-transform: uppercase; 
+    background-color:white; 
 }
 
 .header-nav { 
@@ -72,15 +73,15 @@ body {
 }
 
   .turquoise-background{ 
+    z-index: 3;
     background-color: #14d9c4; 
     align-items: center;
-    position: fixed; 
     margin: auto; 
     flex-direction: column; 
     bottom: 0px; 
     left: 0px; 
     width: 100%;
-    height: 100%;
+    height: 100vh;
     display: flex; 
     padding-bottom: 10px; 
     top: 250px;
@@ -90,6 +91,7 @@ body {
 
 .text-container {
     width: 155px; 
+    height: 100%; 
     text-align: center; 
 }
 .text-h1 {
@@ -97,6 +99,8 @@ body {
     margin-top: 140px; 
     font-weight: bold; 
     font-size: 30px; 
+    position: relative; 
+    top: 100px; 
 }
 
 

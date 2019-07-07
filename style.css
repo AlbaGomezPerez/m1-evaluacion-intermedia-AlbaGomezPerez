@@ -71,15 +71,19 @@
     display: flex; 
     padding-bottom: 10px; 
     top: 250px;
-    text-transform: capitalize; 
-    font-size: 30px; 
+    text-transform: capitalize;  
     color: white; 
 }
 
-.text {
+.text-container {
+    width: 155px; 
+    text-align: center; 
+}
+.text-h1 {
     margin:auto; 
     margin-top: 140px; 
-    font-weight: bold; 
+    /* font-weight: bold;  */
+    font-size: 30px; 
 }
 
 

@@ -10,15 +10,9 @@ body {
     z-index:1;
     text-align: center;
     text-transform: uppercase; 
+    left: 0;
+    top: 0;
     background-color:white; 
-}
-
-.header-nav { 
-    opacity: 0.90; 
-    line-height: 30px; 
-    text-align: center; 
-    justify-content: center; 
-    height: 120px;
 }
 
 .nav-ul {
@@ -28,7 +22,6 @@ body {
 }
 
 .blog {
-    position: relative; 
     top: 70px; 
     margin: 0; 
     padding:0px;
@@ -37,7 +30,6 @@ body {
 }
 
 .contact {
-    position: relative; 
     top: 70px; 
     margin: 0; 
     padding-left: 10px; 
@@ -58,11 +50,9 @@ body {
 
 .logo {
     width: 155px;
-    display: block;
     justify-content: center;
     align-items: flex-end; 
     flex-direction:column;
-    position: absolute;;
     z-index: 2;
     margin-top: 10px;     
 }
@@ -74,7 +64,7 @@ body {
     margin: auto; 
     flex-direction: column; 
     bottom: 0px; 
-    left: 0px; 
+    left: 0px;
     height: 100vh;
     display: flex; 
     padding-bottom: 10px; 
@@ -101,15 +91,32 @@ body {
     width: 160px;
 }
 
+/* .header-nav {  esto ya no se usa, mirar si quieres aplicar estos estilos a otro div
+    opacity: 0.90; 
+    line-height: 30px; 
+    text-align: center; 
+    justify-content: center; 
+    height: 120px;
+} */
+
 .ul-container {
     margin-left: 10px;
+    display: inline-flex;
 }
 
-/* MEDIAQUERIE TABLET AND DESKTOP */
+/* MEDIAQUERY FOR TABLET AND DESKTOP */
 
 @media all and (min-width: 768px) {
     .text-container {
-        width: 200px;  
+        width: 200px; 
+    }
+
+    .header {
+        position:fixed; 
+        display: flex; 
+        justify-content: space-between;
+        height: 100px;
+        /* flex-wrap: wrap; */
     }
     
     .text-h1 {
@@ -119,33 +126,29 @@ body {
 
     .nav-container {
         width: 100%;  
-    }
+        }
 
     .logo {
-        padding-top: 20px; 
-        padding-left: 30px;   
+        /* padding-top: 20px;  */
+        padding-left: 30px; 
+        padding-top: 20px;
+        padding-bottom: 20px; 
+        margin: 0;    
     } 
 
-    .blog {
-        display: inline-block; 
-    }
-    
     .contact {
-        padding-right: 30px; 
+        padding-top: 20px;
+        padding-right: 30px;
+        margin:0;  
+        margin-left: 20px; 
     }
 
-    .ul-container{
-        float:right;
-        /* align-items: center;   */
-        /* height: 100%; */
-        /* justify-content: center;  */
+    .blog {
+        padding-top: 20px;
     }
 
-    .nav-ul {
-        /* height: 100%; */
-        /* justify-content: center; */
-        /* justify-content: center;   */
-         
+    .ul-container { 
+        margin-right: 25px;
     }
 }
 
